@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+  <charset="utf-8">
+  <lang="en">
+  <link rel="stylesheet" href="styles.css">
+    <head>
+      <title>Survey Form</title>
+    </head>
+    <body>
+      <h1 id="title">Survey Form</h1>
+      <p id="description">Thank you for taking the time to help us improve the platform</p>
+      <form name="survey-form" id="survey-form"
+method="POST">
+        <div class="form-element"><label id="name-label" for="name">
+          Name: 
+          <input required name="name" id="name" type="text" placeholder="Enter your name." />
+        </label>
+        </div>
+        <div class="form-element">
+        <label id="email-label">
+          E-Mail: 
+          <input required id="email" name="email" type="email" placeholder="Enter your email." />
+          </label>
+        </div>
+        <div class="form-element">
+          <label id="number-label">
+          Age:
+          <input name="number" id="number" type="number" min="5" max="120" placeholder="Age"></input>
+        </label>
+        </div>
+        <div class="form-element">
+        <label>What's your favourite part about the platform?</label>
+        <select name="favourite-part" id="dropdown">
+          <option value="">Select an option.</option>
+          <option value="1">Design</option>
+          <option value="2">Accesibility</option>
+          <option value="3">Response times</option>
+        </select>
+        </div>
+        <div class="form-element">
+          <label>What is your gender?</label>
+          <br>
+          <label>
+            <input type="radio" name="gender" value="male">
+            Male
+          </label>
+          <br>
+          <label>
+            <input type="radio" name="gender" value="female">
+            Female 
+          </label>
+          <br>
+          <label>
+            <input type="radio" name="gender" value="non-binary">
+            Non-Binary
+          </label>
+          <br>
+          <label>
+            <input type="radio" name="gender" value="not-saying">
+            Prefer to not say.
+          </label>
+        </div>
+        <div class="form-element">
+          <label>
+          Why do you use our platform? You can choose multiple answers.
+          </label>
+          <br>
+          <input type="checkbox" name="fun" id="fun" value="fun" />
+          <label for="fun">I use the webpage for entertainment purposes.</label>
+          <br>
+          <input type="checkbox" name="work" id="work" value="work" />
+          <label for="work">I use the webpage for work purposes.</label>
+          <br>
+          <input type="checkbox" name="research" id="research" value="research" />
+          <label for="research">I use the webpage for research purposes.</label>
+        </div> 
+        <div class="form-element">
+          <label>You are free to leave a comment about the webpage. It's really appreciated.</label>
+          <br>
+          <br>
+          <textarea id="review" name="review" rows="15" cols="40"></textarea>
+        </div>
+        <div class="form-element">
+          <button type="submit" name="submit" id="submit">Submit</button>
+      </form>
+    </body>

@@ -1,0 +1,36 @@
+.form-element {
+  margin: auto;
+  margin-bottom: 20px;
+  
+}
+
+h1 {
+font-size: 28;
+font-family:Georgia, sans-serif;
+  text-align: center;
+}
+p {
+  text-align: center;
+}
+
+input[type="text"], input[type="email"], input[type="number"] {
+  float: auto;
+  margin: auto;
+}
+
+* {
+  font-size: 12;
+  font-family: Verdana, sans;
+  margin-left: 0.5rem;
+  background: #0b3a52;
+  color: #ffffff;
+}
+
+button {
+  text-align: center;
+  width: 10rem;
+  height: 2rem;
+  font-size: 14;
+}
+
+
